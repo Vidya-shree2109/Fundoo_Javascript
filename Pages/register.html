@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/register.css">
+    <title>FundooNotes-Register</title>
+</head>
+
+<body>
+    <div class="main-body">
+        <div class="main-container">
+            <div class="left-container">
+                <div class="header">
+                    <div class="form-logo">
+                        <span style="color: rgb(9, 137, 196)">F</span>
+                        <span style="color: rgb(216, 65, 65)">u</span>
+                        <span style="color: rgb(219, 154, 32)">n</span>
+                        <span style="color: rgb(209, 26, 117)">d</span>
+                        <span style="color: rgb(142, 151, 14)">o</span>
+                        <span style="color: rgb(39, 193, 78)">o</span>
+                        <span style="color: rgb(14, 197, 213)">N</span>
+                        <span style="color: rgb(203, 78, 15)">o</span>
+                        <span style="color: rgb(22, 111, 99)">t</span>
+                        <span style="color: rgb(102, 9, 164)">e</span>
+                        <span style="color: rgb(141, 17, 17)">s</span>
+                    </div>
+                    <span class="header-text">Create your Fundoo Account</span>
+                </div>
+                <form class="registration-form">
+                    <div class="form-name">
+                        <div class="name">
+                            <input type="fname" required placeholder="First name">
+                        </div>
+                        <div class="name">
+                            <input type="lname" required placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="user-name">
+                        <input type="username" required
+                            placeholder="Username                                             @gmail.com">
+                        <span class="form-hint1">You can use letters, numbers & periods</span>
+                    </div>
+                    <a href="" class="form-link">Use my current email address instead</a>
+                    <div class="form-pass">
+                        <div class="pass">
+                            <input type="password" class="password" id="pass" required placeholder="Password">
+                        </div>
+                        <div class="pass">
+                            <input type="password" class="password" id="Cpass" required placeholder="Confirm">
+                        </div>
+                    </div>
+                    <a class="form-hint2">Use 8 or more characters with a mix of letters, numbers & symbols</a>
+
+                    <!-- <div class="checkpassword">
+                        <div id="ShowBox">
+                            <input type="checkbox" class="checkboxcls">
+                        </div>
+                        <label>Show Password</label>
+                    </div> -->
+
+
+                    <div class="checkpassword">
+                        <input type="checkbox" class="checkboxpwd" onclick="show()">
+                        <label class="container">Show password </label>
+                    </div>
+
+                    <div class="form-btn">
+                        <a href="" class="form-btn1">Sign in instead</a>
+                        <input type="submit" value="Create">
+                    </div>
+                </form>
+            </div>
+            <div class="right-container">
+                <img class="side-img" src="/Assets/account.svg">
+                <span class="side-img-text">One Account. All of Fundoo working for you.</span>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div>
+                <select class="lang-select">
+                    <option value="English (United States)" selected>English (United States)</option>
+                    <option value="English (United Kingdom)">English (United Kingdom)</option>
+                    <option value="Africaans">Africaans</option>
+                    <option value="Indonesia">Indonesia</option>
+                </select>
+            </div>
+            <div class="footer-link">
+                <a href="https://support.google.com/accounts?hl=en#topic=3382296">Help</a>
+                <a href="https://policies.google.com/privacy?gl=IN&hl=en">Privacy</a>
+                <a href="https://policies.google.com/terms?gl=IN&hl=en">Terms</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
