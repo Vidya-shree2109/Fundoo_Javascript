@@ -1,4 +1,4 @@
-.main-body{
+.outer-body{
     display: flex;
     flex-direction: column;
     justify-content:center ;
@@ -101,85 +101,87 @@
     margin-bottom: 9px;
 }
 
-.form-hint1{
-   font-size: 12px;
-   margin:7px 0 0 10px;
+
+
+.form-hint{
+  font-size: 12px;
+  margin:7px 0 0 10px;
+  width: 310px;
 }
 
+
 .form-link{
-    color: #1144ed;
-    font-size: 15px;
-    margin: 20px 0 20px;
-  }
+  color: #1144ed;
+  font-size: 15px;
+  margin: 20px 0 20px;
+}
 
 
 .form-pass{
-    display: flex;
-    margin-top: 15px;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  width: 102.5%;
 }
 
+
 input{
-    outline: none;
-    border: 1px solid #9c9c9c;
-    border-radius: 5px;
-    padding: 0 10px;
-    height: 32px;
-    font-size: 15px;
-    width: 80%;
-  }
-  input:focus{
-    border: 1.5px solid #1f52f9;
-  }
-  .name{
-    display: inline-block;
-  }
-  input[type="fname"]{
-    display: block;
-    margin: 30px 0 0;
-  }
-  input[type="lname"]{
-    display: block;
-    margin: 30px 0 0 10px;
-  }
+  outline: none;
+  border: 1px solid #9c9c9c;
+  border-radius: 5px;
+  padding: 0 10px;
+  height: 34px;
+  font-size: 15px;
+  width: 80%;
+}
 
-  input[type="username"]{
-    display: block;
-    width: 92.7%;
-    margin: 15px 0 0 ;
-  }
+input[type="fname"]{
+  display: block;
+  margin: 30px 0 0;
+}
+input[type="lname"]{
+  display: block;
+  margin: 30px 0 0 10px;
+}
+
+input[type="username"]{
+  display: block;
+  width: 92.7%;
+  margin: -1px 0 0 ;
+}
+
+a{
+  position: relative;
+  text-decoration: none;
+  display: block;
+}
 
 
-  
- a{
-    position: relative;
-    text-decoration: none;
-    display: block;
-  }
-  
+.form-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 55px 5px 0 0;
+}
 
-  .form-hint2{
-    font-size: 12.3px;
-    margin: 7px 0 0 10px;
-    width: 310px;
-  }
+.form-btn1{
+  font-size: 14px;
+  color: #4971f6;
+  display: inline-block;
+  font-family: arial rounded mt;
+}
 
-  .form-btn{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* margin: 105px 5px 0 0; */
-    margin: 15px 5px 0 0;
-  }
+.form-checkbox{
+  display: flex;
+  justify-content: left;
+  margin:18px 0 0 -7px;
+  font-size: 13px;
 
-  .form-btn1{
-    font-size: 14px;
-    color: #4b71f0;
-    display: inline-block;
-    font-family: arial rounded mt;
-  }
+}
 
-  input[type="submit"]{
-    background:  #4b71f0;
+
+input[type="submit"]{
+    background:  #4971f6;
     color: #fff;
     border: none;
     width: 22%;
@@ -192,18 +194,25 @@ input{
   input[type="submit"]:hover{
     background: #254fdb;
   }
-  
 
-  .iconeye{
-    display: inline-block;
-    padding-right: 10px;
+  .beforeinput:focus{
+    border: 1.5px solid #1f52f9;
   }
-  #eye{
-    display: block;
-    position: relative;
-    top: 7px;
-    width:25px;
-    cursor: pointer;
+
+  .afterinput{
+    border: 1.5px solid red;
+    color: red;
+  }
+  
+  .afterinput input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+  }
+
+  .Errormessage{
+    color: red;
+    padding-top: 3px;
+    font-size: 12px;
+    padding-left: 10px;
   }
 
   .checkpassword {
@@ -218,4 +227,15 @@ input{
     width: 9%;
     height: 18px;
     margin-top: -1px;
+}
+
+
+#btnj{
+  border:none;
+  background:  #4971f6;
+  color: #fff;
+  width: 22%;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 15px;
 }

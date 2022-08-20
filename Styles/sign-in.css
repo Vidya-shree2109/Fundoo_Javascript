@@ -1,4 +1,4 @@
-.main-body{
+.outer-body{
     display: flex;
     flex-direction: column;
     justify-content:center ;
@@ -7,7 +7,7 @@
     font-family: Arial, sans-serif;
 }
 
-.login-container{
+.signin-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,7 @@
     border-radius: 10px;
     margin-top: -100px;    
     width: 56.5vh;
-    height: 68%;
+    height: 74%;
 }
 
 .header{
@@ -27,7 +27,7 @@
 
 .form-logo{
     margin-top: 20px;
-    font-size: 23px;
+    font-size: 30px;
     font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
     word-spacing: -6px;
     line-height: 48px;
@@ -44,10 +44,10 @@ h4{
 
 .header-text{
     margin-top: 13.5px;
-    font-size: 16px;
+    font-size: 17px;
 }
 
-.login-form{
+.signin-form{
     margin-top: 30px;
     min-height: 30%;
     display: flex;
@@ -78,7 +78,7 @@ h4{
     width: 86%;
 }
 
-.login-footer{
+.signin-footer{
     font-size: 13px;
     margin: 2px 0 0 45px;
     padding-top: 25px;
@@ -89,40 +89,36 @@ h4{
 }
 
 input{
-    outline: none;
-    border: 1px solid #e6e4e4;
-    border-radius: 4px;
-    padding: 0 10px;
-    height: 53.5px;
-    font-size: 15px;
-    width: 70%;
-  }
-  input:focus{
-    border: 1.5px solid #1f52f9;
-  }
+  outline: none;
+  border: 1px solid #e6e4e4;
+  border-radius: 4px;
+  padding: 0 10px;
+  height: 50px;
+  font-size: 15px;
+  width: 70%;
+}
 
-  input[type="email"]{
-    display: block;
-    width: 90.8%;
-    margin: 5px 0 0 10px;
-    padding: 2px 0 0 15px;
-  }
+input[type="email"]{
+  display: block;
+  width: 90.8%;
+  margin: 5px 0 0 10px;
+  padding: 2px 0 0 15px;
+}
 
-  
-  input[type="password"]{
-    display: block;
-    width: 91.2%;
-    margin: 5px 0 0 41px;
-    padding: 2px 0 0 15px;
-  }
 
-  input[type="text"]{
-    display: block;
-    width: 91.2%;
-    margin: 5px 0 0 41px;
-    padding: 2px 0 0 15px;
-  }
+input[type="password"]{
+  display: block;
+  width: 91.2%;
+  margin: 5px 0 0 41px;
+  padding: 2px 0 0 15px;
+}
 
+input[type="text"]{
+  display: block;
+  width: 91.2%;
+  margin: 5px 0 0 41px;
+  padding: 2px 0 0 15px;
+}
   .checkbox{
     cursor: pointer;
     width: 9%;
@@ -195,4 +191,37 @@ input{
 .lang-select{
     border: none;
     font-size: 12px;
+}
+
+
+.beforeinput:focus{
+  border: 1.5px solid #1f52f9;
+}
+
+.afterinput{
+  border: 1.5px solid red;
+  color: red;
+}
+
+.afterinput input::placeholder {
+  color: red;
+}
+
+.Errormessage{
+  color: red;
+  padding-top: 3px;
+  font-size: 12px;
+  padding-left: 18px;
+}
+
+
+#btnj{
+  background: #257bd0;
+  color: #fff;
+  border: none;
+  width: 22%;
+  height: 34.5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
 }
