@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     let cls = document.getElementById('btnj');
 
-    let fn = 0, ln = 0, un = 0, psw = 0, cnfpw = 0;
+    let fn = 0, ln = 0, un = 0, psw = 0, cpsw = 0;
 
     const showError = (inputId, spanId, errMsg, beforeinput, afterinput) => {
         console.log(errMsg);
@@ -72,7 +72,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     cls.addEventListener('click', () => {
         console.log("Welcome", firstName.value, lastName.value, userName.value, password.value);
-        if ((fn == 1) && (ln == 1) && (un == 1) && (psw == 1) && (cpsw == 1)) {
+        // if ((fn == 1) && (ln == 1) && (un == 1) && (psw == 1) && (cpsw == 1)) {
             let data = {
                 FirstName: firstName.value,
                 LastName: lastName.value,
@@ -94,7 +94,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     console.log(error);
                 }
             })
-        }
+        // }
     })
 
 })

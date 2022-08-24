@@ -46,7 +46,8 @@ window.addEventListener('DOMContentLoaded', () => {
     if (!regex.test(input.value)) {
       a = showError(input.id, spanId, errMsg, beforeinput, afterinput);
       return 0;
-    } else {
+    } 
+    else {
       a = showSuccess(input.id, spanId, beforeinput, afterinput);
       return 1;
     }
@@ -54,7 +55,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   cls.addEventListener('click', () => {
     console.log("Welcome", userName.value, password.value);
-    if ((un == 1) && (psw == 1)) {
       let data = {
         email: userName.value,
         password: password.value
@@ -69,14 +69,16 @@ window.addEventListener('DOMContentLoaded', () => {
         },
         success: function (result) {
           console.log(result);
+          localStorage.setItem('token',result.data);
         },
         error: function (error) {
           console.log(error);
         }
       })
-    }
   })
-
+  function Resetpage(){
+    document.getElementById('login-form').reset();
+  }
 })
 
 
