@@ -8,10 +8,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   let userName = document.getElementById('emailId');
   let password = document.getElementById('pass');
-
   let cls = document.getElementById('btnj');
 
-  let fn = 0, ln = 0, un = 0, psw = 0, cnfpw = 0;
+  let un = 0, psw = 0;
 
 
   const showError = (inputId, spanId, errMsg, beforeinput, afterinput) => {
@@ -33,12 +32,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
   userName.addEventListener('keyup', () => {
     console.log(userName.id);
-    ln = check(userName, 'beforeinput', 'afterinput', 'emailHint', "Enter Valid Email address", regexEmail)
+    un = check(userName, 'beforeinput', 'afterinput', 'emailHint', "Enter Valid Email address", regexEmail)
   });
 
   password.addEventListener('keyup', () => {
     console.log(password.id);
-    ln = check(password, 'beforeinput', 'afterinput', 'passHint', "Enter Valid Password", regexPass)
+    psw = check(password, 'beforeinput', 'afterinput', 'passHint', "Enter Valid Password", regexPass)
   });
 
 
@@ -46,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (!regex.test(input.value)) {
       a = showError(input.id, spanId, errMsg, beforeinput, afterinput);
       return 0;
-    } 
+    }
     else {
       a = showSuccess(input.id, spanId, beforeinput, afterinput);
       return 1;
@@ -69,16 +68,19 @@ window.addEventListener('DOMContentLoaded', () => {
         },
         success: function (result) {
           console.log(result);
-          localStorage.setItem('token',result.data);
+          localStorage.setItem('token',result.response);
+          token=localStorage.getItem('token');
+             if(token)
+             {
+               window.location.href = "http://127.0.0.1:5500/Pages/dashboard.html";
+             }
         },
         error: function (error) {
           console.log(error);
         }
       })
   })
-  function Resetpage(){
-    document.getElementById('login-form').reset();
-  }
+
 })
 
 

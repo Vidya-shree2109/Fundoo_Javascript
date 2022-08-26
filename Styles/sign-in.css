@@ -165,6 +165,22 @@ input[type="text"]{
     background: #3260f6;
   }
 
+
+  .submit-btn{
+    background:  #157be1;
+    color: #fff;
+    border: none;
+    width: 22%;
+    height: 36px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .submit-btn:hover{
+    background: #254fdb;
+  }
+
   .footer-container{
     display: flex;
     flex-direction: row;

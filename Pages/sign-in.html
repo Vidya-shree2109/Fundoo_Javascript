@@ -30,14 +30,14 @@
                 <h4>Sign in</h4>
                 <span class="header-text">Use your Fundoo Account</span>
             </div>
-            <div class="signin-form">
+            <form class="signin-form" action="#">
                 <div class="user-email">
                     <input type="email" class="beforeinput password" class="afterinput" id="emailId" required placeholder="Email or phone">
                     <span id="emailHint" class="Errormessage" ></span>
                 </div>
                 <div class="form-pass">
                     <div class="pass">
-                        <input type="password" class="beforeinput password" class="afterinput" required placeholder="Password">
+                        <input type="password" class="beforeinput password" class="afterinput" id="pass" required placeholder="Password">
                         <span id="passHint" class="Errormessage" style="padding-left: 49px;"></span>
                     </div>
                     <div class="form-checkbox">
@@ -51,10 +51,12 @@
                     <div class="form-btn">
                         <a href="http://127.0.0.1:5500/Pages/register.html" class="form-btn1">Create
                             account</a>
-                        <input type="submit" value="Login">
+                        <!-- <input type="submit" value="Login"> -->
+                        <!-- <button id="Login" class="submit-btn">Login</button> -->
+                        <button class="submit" id="btnj">Login</button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
         <div class="footer-container">
             <div>

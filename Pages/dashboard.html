@@ -19,18 +19,18 @@
             </button>
             <img src="/Assets/Dashboard/Notelogo.png" style="margin-left:23px ;width:27px; height: 36px;" alt="">
             <span class="logo-text">FundooNotes</span>
-            <div class="serch-box">
+            <div class="search-box">
                 <button class="search-icon  tooltip">
                     <img src="/Assets/Dashboard/search.png" />
                     <span class="tooltiptext">Search</span>
                 </button>
                 <input class="search-input" placeholder="Search" autocomplete="off" />
-                <button class="close-icon hide" >
+                <button class="close-icon hide">
                     <img style="width: 22px;" src="/Assets/Dashboard/close.png" />
                 </button>
             </div>
         </div>
-        <div class="right-area">
+        <div class="right-part">
             <button>
                 <img src="/Assets/Dashboard/refresh.png" />
             </button>
@@ -51,7 +51,7 @@
     <div class="side-navbar" id="navbar">
         <ul class="nav-list">
             <li id="notes">
-                <a href="#">
+                <a href="#" class="active buttonDisabled">
                     <i><img src="/Assets/Dashboard/lightbulb.png" alt=""></i>
                     <span class="link-name">Notes</span>
                 </a>
@@ -84,8 +84,14 @@
     </div>
     <div class="dashboard-content">
         <div class="create-note" class="expand">
-            <input type="text" id="title" class="create1" autocomplete="off" placeholder="Take a note...">
-            <textarea type="text" id="description" class="create2" autocomplete="off" placeholder="Take a note..." ></textarea>
+            <div class="note-title">
+                <input type="text" id="title" class="create1" autocomplete="off" placeholder="Take a note...">
+                <button class="pinnote" id="pin">
+                    <img src="/Assets/Dashboard/pin.png" />
+                </button>
+            </div>
+            <textarea type="text" id="description" class="create2" autocomplete="off"
+                placeholder="Take a note..."></textarea>
             <div id="footer" class="footer-content">
                 <div class="footer-icons">
                     <button id="Reminde me">
@@ -115,6 +121,8 @@
                 </div>
                 <button class="close-btn">Close</button>
             </div>
+        </div>
+        <div class="display-notes" id="AllNotes">
         </div>
     </div>
     <script src="/Scripts/dashboard.js"></script>
