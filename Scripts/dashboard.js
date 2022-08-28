@@ -1,5 +1,3 @@
-// window.addEventListener('DOMContentLoaded', () => {
-
 console.log("=> Connected to Dashboard.js");
 let token = localStorage.getItem('token');
 console.log(token);
@@ -26,7 +24,6 @@ let oncreate = document.querySelector('.create1');
 let desc = document.querySelector('.create2');
 
 const Archivenotes = document.querySelector('.Archivenotes');
-// const Trashnotes=document.querySelector('.Trashnotes');
 let display_notes = document.querySelector('.notes');
 
 var noteArray;
@@ -46,9 +43,6 @@ closebtn.addEventListener('click', () => {
         color: bgcolor,
         reminder: Reminder,
         image: Image,
-        // isArchived: IsArchived,
-        // isPinned: IsPinned,
-        // isDeleted: isDeleted,
         createdAt: CreatedAt,
         editedAt: editedAt
     }
@@ -144,8 +138,8 @@ Archivenotes.addEventListener('click', () => {
     displayAllNotes(notes);
 })
 
+
 function archiveNote(noteid) {
-    // console.log(noteid);
     $.ajax({
         url: `https://localhost:44383/api/Note/Archive/${noteid}`,
         type: 'PUT',
@@ -182,5 +176,3 @@ function displayAllNotes(Notesdata) {
         </div>`
     ).join(' ');
 };
-
-// })
